@@ -1,0 +1,172 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f7fa;
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #4a6fa5;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.month-nav {
+    display: flex;
+    align-items: center;
+}
+.month-nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 15px;
+}
+.month-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+.view-options button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.view-options button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.day-header {
+    text-align: center;
+    padding: 10px;
+    background-color: #4a6fa5;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.day-cell {
+    min-height: 120px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+.day-number {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4a6fa5;
+}
+.event {
+    background-color: #e3f2fd;
+    border-left: 3px solid #4a6fa5;
+    padding: 5px 8px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.event:hover {
+    transform: translateX(3px);
+}
+.other-month {
+    opacity: 0.5;
+    background-color: #f0f0f0;
+}
+.today {
+    background-color: #e8f4fe;
+    border: 2px solid #4a6fa5;
+}
+.event-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    width: 400px;
+    max-width: 90%;
+    display: none;
+}
+.event-form h3 {
+    margin-top: 0;
+    color: #4a6fa5;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.form-actions button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.save-btn {
+    background-color: #4a6fa5;
+    color: white;
+}
+.cancel-btn {
+    background-color: #f0f0f0;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: none;
+}
+.delete-btn {
+    margin-left: 8px;
+    background: #ffebee;
+    color: #d32f2f;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 2px 6px;
+}
