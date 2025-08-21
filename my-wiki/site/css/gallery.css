@@ -1,0 +1,20 @@
+/* docs/css/gallery.css */
+
+/* 画廊容器样式 */
+.mkdocs-gallery .gallery-container {
+  margin: 10px 0;       /*在画廊容器的上下方添加 10px 的外边距*/
+}
+
+/* 图片基础样式 */
+.mkdocs-gallery .gallery-container img {
+  border-radius: 5px; /* 圆角效果：图片四角变为 5px 圆角 */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);  /* 柔和阴影：下方添加浅灰色阴影（透明度 10%），营造悬浮感 */
+  transition: all 0.3s ease;   /* 平滑过渡动画,所有样式变化（如阴影、大小等）均以 0.3 秒平滑过渡 */
+  max-width: 100%; /* 确保图片不会溢出容器 */
+}
+
+/* 鼠标悬停效果 */
+.mkdocs-gallery .gallery-container img:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);   /*阴影强化：阴影更大（15px 模糊）、更深（透明度 20%），模拟图片抬升效果*/
+  z-index: 10;    /*层级提升：z-index: 10 确保悬停图片覆盖其他元素（避免重叠时被遮挡）*/
+}
