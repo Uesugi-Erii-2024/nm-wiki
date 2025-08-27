@@ -1,0 +1,55 @@
+<!-- 日历 -->
+<link rel="stylesheet" href="css/calendar.css">
+<script src="js/calendar.js"></script>
+
+<div class="calendar-header">
+    <!-- ...日历结构... -->
+    <div class="month-nav">
+        <button id="prev-month">‹</button>
+        <div class="month-title" id="current-month"></div>
+        <button id="next-month">›</button>
+    </div>
+    <div class="view-options">
+        <button id="month-view">月视图</button>
+        <button id="week-view">周视图</button>
+        <button id="add-event">添加日程</button>
+    </div>
+</div>
+<div class="calendar-grid" id="calendar-grid"></div>
+<div class="overlay" id="overlay"></div>
+<div class="event-form" id="event-form">
+    <!-- ...表单结构... -->
+    <h3>添加新日程</h3>
+    <div class="form-group">
+        <label for="event-title">日程标题</label>
+        <input type="text" id="event-title" placeholder="输入日程标题">
+    </div>
+    <div class="form-group">
+        <label for="event-date">日期</label>
+        <input type="date" id="event-date">
+    </div>
+    <div class="form-group">
+        <label for="event-time">时间</label>
+        <input type="time" id="event-time">
+    </div>
+    <div class="form-group">
+        <label for="event-desc">描述</label>
+        <textarea id="event-desc" rows="3" placeholder="输入日程描述"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="event-color">颜色标记</label>
+        <select id="event-color">
+            <option value="#e3f2fd">默认蓝色</option>
+            <option value="#e8f5e9">绿色</option>
+            <option value="#ffebee">红色</option>
+            <option value="#fff8e1">黄色</option>
+            <option value="#f3e5f5">紫色</option>
+        </select>
+    </div>
+    <div class="form-actions">
+        <button class="cancel-btn" id="cancel-event">取消</button>
+        <button class="save-btn" id="save-event">保存</button>
+    </div>
+</div>
+<script src="js/calendar.js"></script>
+<!-- ____________________________________________________________ -->
