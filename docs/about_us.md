@@ -76,7 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
 我们的网页开发和运营还需要更多优化和提升，期待您的参与。
 请添加下列微信以进入网页运营小组。
 <!-- <img src="images/daifengzhilangxi.jpg" alt="盛国轩" width="300" /> -->
-<img src="/images/daifengzhilangxi.jpg" alt="盛国轩" width="300" />
+<img src="images/daifengzhilangxi.jpg" alt="盛国轩" width="300" />
+
 
 
 
