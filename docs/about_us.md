@@ -6,7 +6,7 @@
 
 <div id="team-gallery" 
      class="mkdocs-gallery"
-     data-folder-path="images/team/"
+     data-folder-path="/images/team/"
      data-image-size="100px">
 </div>
 <br>
@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 请添加下列微信以进入网页运营小组。
 <!-- <img src="images/daifengzhilangxi.jpg" alt="盛国轩" width="300" /> -->
 <img src="images/daifengzhilangxi.jpg" alt="盛国轩" width="300" />
+
 
 
 
