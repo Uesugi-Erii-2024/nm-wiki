@@ -9,8 +9,9 @@
      data-folder-path="images/team/"
      data-image-size="100px">
 </div>
+<br>
 
-## 调试信息
+<!-- ## 调试信息
 
 <dl>
   <dt>当前页面</dt>
@@ -63,18 +64,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }, 3000);
 });
-</script>
+</script> -->
 
 
 ## 发起投稿
-请致信nanmowiki@163.com，我们将尽快审核并上传您的投稿。
-
+请致信nanmowiki@163.com，我们将尽快审核并上传您的投稿。<br>
+<br>
 
 
 ## 加入我们
 我们的网页开发和运营还需要更多优化和提升，期待您的参与。
-请添加下列微信以进入网页运维小组
-![待风止浪息](images/daifengzhilangxi.jpg)
+请添加下列微信以进入网页运营小组。
+<img src="/images/daifengzhilangxi.jpg" alt="盛国轩" width="300" />
 
 
 

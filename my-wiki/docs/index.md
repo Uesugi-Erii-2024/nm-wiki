@@ -49,7 +49,6 @@ updateTime(); // 立即执行一次
     <div class="view-options">
         <button id="month-view">月视图</button>
         <button id="week-view">周视图</button>
-        <button id="add-event">添加日程</button>
     </div>
 </div>
 <div class="calendar-grid" id="calendar-grid"></div>

@@ -1,15 +1,18 @@
 site_name: 上海市南洋模范中学生存手册
 site_url: http://127.0.0.1:8000/
 site_author: 待风止浪息
+repo_url: https://github.com/Uesugi-Erii-2024
+repo_name: GitHub
 
 nav: 
   - 主页: index.md
 
   - 基本信息:
     - 新生须知:
-      - 日程表: articles/information/new_student/calendar/calendar2025.md
+      - 日程表: articles/information/new_student/timetable/timetable.md
       - 晚自习: articles/information/new_student/self_study_at_night/self_study_at_night.md
       - 分班: articles/information/new_student/placement/placement.md
+      - 班级工作: articles/information/new_student/committee/committee.md
       - 衣食住行:
         - 校服: articles/information/new_student/basic_necessities_of_life/uniform/uniform_2025.md
         - 食堂: articles/information/new_student/basic_necessities_of_life/canteen/canteen_2025.md
@@ -17,28 +20,26 @@ nav:
         - 周边: articles/information/new_student/basic_necessities_of_life/surrounding_areas/surrounding_areas.md
       - 教师团队: articles/information/new_student/teachers/teachers.md
       - 名词解释: articles/information/new_student/glossary/glossary.md
-
+    
     - 其他信息: articles/information/other_informations/other_informations.md
 
 
-  # - 校园活动:
-  #   - 社团:
-  #     - 社课:
-  #     - 社团文化节:
-  #   - 东方绿洲:
-  #   - 无锡研学:
-  #   - 团学联:
-  #   - 军训:
-  #   - 学农:
-  #   - 艺术节:
-  #   - 科技节:
-  #   - 竞赛班:
-  #   - 职业体验:
-  #   - 复旦卓越计划和交大学森计划:
-  #   - 体育:
-  #     - 运动会:
-  #     - 篮球南模杯:
-  #     - 足球青峰杯:
+  - 校园活动:
+    - 社团: /articles/activities/clubs.md
+    - 东方绿洲: /articles/activities/oriental_land.md
+    - 无锡研学: /articles/activities/wuxi.md
+    - 团学联: /articles/activities/tuanxuelian.md
+    - 军训: /articles/information/new_student/train/train.md
+    - 学农: /articles/activities/farm.md
+    - 艺术节: /articles/activities/art_festival.md
+    - 科技节: /articles/activities/tech_festival.md
+    - 职业体验: /articles/activities/job.md
+    - 复旦卓越计划和交大学森计划: /articles/activities/fdjd_plan.md
+    - 体育:
+      - 南模杯: /articles/activities/nm_cup.md
+      - 青峰杯: /articles/activities/qingfeng_cup.md
+      - 运动会: /articles/activities/olympics.md
+
 
 
 
@@ -84,35 +85,41 @@ nav:
   # - 美好瞬间:
 
 
-  # - Q&A:
+  - Q&A: articles/information/other_informations/q_a.md
+
 
 
 
   - 关于我们: about_us.md
 
-# theme: readthedocs
+theme:
+  name: material
+  language: zh
+  # features:
+  #   - navigation.tabs
+  palette:
+    primary: light blue
+  features:
+    - header.autohide
 
 extra_javascript:
   - js/gallery.js
+  - js/timetable_loader.js
 
 extra_css:
   - css/gallery.css
+  - css/override-width.css
 
 plugins:
   - search:
       lang:
           - en
           - ja
-      separator: '[\s\-\.]+'
+      separator: '[/s/-/.]+'
   
    
-  # - mkdocs-simple-hooks:
-  #     hooks:
-  #       pre_build: 
-  #         - "python generate_file_list.py"
-
-
-# theme:
-#   features:
-#     - search.suggest
-#     - search.share
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Uesugi-Erii-2024
+      name: auther
